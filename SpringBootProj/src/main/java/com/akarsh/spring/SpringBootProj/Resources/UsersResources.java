@@ -1,6 +1,7 @@
 package com.akarsh.spring.SpringBootProj.Resources;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 import com.akarsh.spring.SpringBootProj.Models.Users;
 import com.akarsh.spring.SpringBootProj.Repositories.UsersRepo;
@@ -25,4 +26,6 @@ public class UsersResources {
         usersRepository.save(users);
         return usersRepository.findAll();
     }
+
+
 }
